@@ -217,6 +217,7 @@ fi
 CMAKE_VERSION="2.8.6"
 CMAKE_FOLDER=cmake-$CMAKE_VERSION
 CMAKE_PREFIX=`pwd`/.heroku/python  # just use that...
+export PREFIX=$CMAKE_PREFIX
 
 # Install cmake because the world sucks
 if [ ! -f .heroku/python/bin/cmake ]; then
